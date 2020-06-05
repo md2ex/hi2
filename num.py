@@ -1,8 +1,13 @@
 import random
-x = random.randint(1, 100)
+num1 = input('請輸入隨機數字開始範圍值')
+num2 = input('請輸入隨機數字結束範圍值')
+num1 = int(num1)
+num2 = int(num2)
+x = random.randint(num1, num2)
 count = 0
 while True:
-	y = input('請猜數字1-100: ')
+	print('範圍', num1, '-', num2)
+	y = input('請猜數字:')
 	y = int(y)
 	count = count + 1
 	if y == x:
